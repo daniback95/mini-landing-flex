@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* poppins-latin-400-normal */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* poppins-latin-700-normal */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-700-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+  font-family: 'Poppins';
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.nav {
+  background-color: slateblue;
+}
+
+.nav__container {
+  width: 90%;
+  max-width: 1200px;
+  height: 72px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav__menu {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.nav_link {
+  color: inherit;
+}
+
+.hero {
+  width: 90%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero__figure {
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.hero__article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.hero__cta {
+  padding: 1rem 2rem;
+  align-self: center;
+  border-radius: 2rem;
+  color: white;
+  background-color: slateblue;
+}
+
+@media screen and (width > 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero__figure {
+    width: 45%;
+    max-width: initial;
+    margin: initial;
+    order: 1;
+  }
+
+  .hero__article {
+    width: 45%;
+    text-align: left;
+  }
+
+  .hero__cta{
+    align-self: flex-start;
+  }
+
+}
